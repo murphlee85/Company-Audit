@@ -9,4 +9,10 @@ class TimeSheetTest < Minitest::Test
 
     assert timesheet, timesheet.exists
   end
+
+  def test_timesheet_has_attributes
+    timesheet = TimeSheet.new(employee_id, project_id, date, minutes)
+
+    assert 
+  end
 end

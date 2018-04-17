@@ -9,13 +9,13 @@ class EmployeeTest < Minitest::Test
   end
 
   def test_attributes
-    skip
+    
     employee = Employee.new(employee_id, name, role, start_date, end_date)
 
     assert_equal 5, employee.id.class
     assert_equal "Sally Jackson", employee.name
     assert_equal "Engineer", employee.role
-    assert_equal 2015, 01, 01, employee.start_date
-    assert_equal 2018, 01, 01, employee.end_date
+    assert_equal "2015-01-01", employee.start_date
+    assert_equal "2018-01-01", employee.end_date
   end
 end
