@@ -5,10 +5,11 @@ class EmployeeTest < Minitest::Test
   def test_instantiation
     employee = Employee.new(employee_id, name, role, start_date, end_date)
 
-    assert_instance_of employee, employee.exists
+    assert_instance_of employee, employee.instantiation
   end
 
   def test_attributes
+    skip
     employee = Employee.new(employee_id, name, role, start_date, end_date)
 
     assert_equal 5, employee.id.class
