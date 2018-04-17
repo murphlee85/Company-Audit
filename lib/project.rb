@@ -1,6 +1,7 @@
 class Project
+  attr_reader :exists
 
-  def initialize('123', 'Widget Maker', '2015-01-01', '2018-01-01')
-    
+  def initialize(project_id, name, start_date, end_date)
+    @exists = exists
   end
 end
